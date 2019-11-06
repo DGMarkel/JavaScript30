@@ -23,8 +23,8 @@ fetch(endpoint)
   .then(res => res.json())
   .then(data => cities.push(...data))
 
-
 function findMatches(wordToMatch, cities) {
+  const regex = new Regexp(wordToMatch, '_gi');
   return cities.filter(place => place.city.match(regex))
 }
 
