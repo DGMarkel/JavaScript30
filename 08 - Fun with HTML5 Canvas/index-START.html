@@ -23,7 +23,7 @@
 
   function draw(e) {
     if (!isDrawing) return; // stop function from running when mouse is not down
-    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`// hue incremented by one every time fn is called
     ctx.beginPath();
     // start from
     ctx.moveTo(lastX, lastY);
