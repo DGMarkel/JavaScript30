@@ -32,6 +32,10 @@
     ctx.stroke();
     [lastX, lastY] = [e.offsetX, e.offsetY];
     hue++;
+    // resets hue if it exceeds max hsl value for hue
+    if (hue >= 360) {
+      hue = 0;
+    };
   };
 
   canvas.addEventListener('mousemove', draw);
