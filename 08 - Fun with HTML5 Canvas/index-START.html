@@ -37,6 +37,7 @@
     if (hue >= 360) {
       hue = 0;
     };
+    // increments linewidth based on max and min params
     if(ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
       direction = !direction;
     };
